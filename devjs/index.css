@@ -1,0 +1,109 @@
+body {
+    font-family:sans-serif
+}
+
+#centrage{
+    width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.liste-exo{
+    margin:50px 0 0 0;
+    padding:0
+}
+
+.boite-modele{
+    display:block;
+    width:200px;
+    margin:auto;
+    padding:0;
+    font-size:16px;
+    text-align:left;
+    height:32px;
+    line-height:32px;
+    list-style-type:none;
+    cursor:pointer;
+    border:1px solid #aaa
+}
+
+.boite-date{
+    width:400px;
+    margin:auto;
+    padding:0;
+    font-size:12px;
+    text-align:center;
+    height:32px;
+    line-height:32px;
+    list-style-type:none;
+}
+
+.boite-exo{
+    float:left;
+    font-size:12px;
+    width:200px;
+    text-align:left;
+    height:64px;
+    line-height:32px;
+    list-style-type:none;
+    margin:5px;
+    cursor:pointer;
+    border:1px solid #aaa
+}
+
+.lien-exo{
+    display:block;
+    text-align:center;
+    width:200px
+}
+
+.boite-exo .bouton {
+    display:block;
+    float:left;
+    width:33.3333%;
+    text-align: center;
+    color:#666;
+    font-weight: bold
+}
+
+.tablette {
+    background-color: #BBDEFB
+;
+}
+
+.pc {
+    background-color: #90CAF9;
+}
+
+.telecharger{
+    background-color:#64B5F6;
+}
+
+.lien-modele{
+    display:block;
+    float:left;
+    text-align:center;
+    width:170px
+}
+
+.btn-download, .btn-download:link, .btn-download:active, .btn-download:visited, .btn-download:hover{
+    display:block;
+    width:100%;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+    font-style:italic
+}
+
+
+.ui-button-text{
+    font-size: 12px
+}
+
+.ui-dialog-titlebar{
+    display : none
+}
+
+.ui-dialog-buttonpane {
+    
+}

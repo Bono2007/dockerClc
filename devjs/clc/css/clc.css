@@ -1,0 +1,522 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, .clc div, .clc span, .clc applet, .clc object, .clc iframe,
+.clc h1, .clc h2, .clc h3, .clc h4, .clc h5, .clc h6, .clc p, .clc blockquote, .clc pre,
+.clc a, .clc abbr, .clc acronym, .clc address, .clc big, .clc cite, .clc code,
+.clc del, .clc dfn, .clc em, .clc img, .clc ins, .clc kbd, .clc q, .clc s, .clc samp,
+.clc small, .clc strike, .clc strong, .clc sub, .clc sup, .clc tt, .clc var,
+.clc b, .clc u, .clc i, .clc center,
+.clc dl, .clc dt, .clc dd, .clc ol, .clc ul, .clc li,
+.clc fieldset, .clc form, .clc label, .clc legend,
+.clc table, .clc caption, .clc tbody, .clc tfoot, .clc thead, .clc tr, .clc th, .clc td,
+.clc article, .clc aside, .clc canvas, .clc details, .clc embed, 
+.clc figure, .clc figcaption, .clc footer, .clc header, .clc hgroup, 
+.clc menu, .clc nav, .clc output, .clc ruby, .clc section, .clc summary,
+.clc time, .clc mark, .clc audio, .clc video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.clc article, .clc aside, .clc details, .clc figcaption, .clc figure, 
+.clc footer, .clc header, .clc hgroup, .clc menu, .clc nav, .clc section {
+	display: block;
+}
+.clc body {
+	line-height: 1;
+	font-family:"Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif
+}
+.clc ol, .clc ul {
+	list-style: none;
+}
+.clc blockquote, .clc q {
+	quotes: none;
+}
+.clc blockquote:before, .clc blockquote:after,
+.clc q:before, .clc q:after {
+	content: '';
+	content: none;
+}
+.clc table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* fin reset */
+
+.clc {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family:"Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+	color:#000;
+}
+
+.nettoyeur {
+	float:none;
+	font-size:1px
+}
+
+.clc.base-container {
+	position:relative;
+    width:735px;
+    min-height:450px;
+    border:1px solid #ccc;
+	border-radius:5pt;
+	overflow:hidden;
+	text-align: left;
+}
+
+.clc .page {
+	position:relative;
+    width:735px;
+    height:450px;
+	margin:auto;
+	overflow:hidden;
+	background-image:url(images/noisepattern-6.png);
+	background-repeat:repeat;
+	border-radius:5pt
+}
+
+
+
+.clc .page.chargement .bloc-message {
+	width:100%;
+	margin:100px 0 50px 0;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center
+}
+
+.clc .page.chargement .bloc-spinner {
+	width:64px;
+	height:64px;
+	margin:auto;
+	background-image:url(images/spinner.gif)
+}
+
+.clc .page.titre {
+	/*display:none;*/
+}
+
+
+.clc .page.titre .bloc-titre {
+	width:600px;
+	margin:20px auto 10px auto;
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+}
+
+.clc .page.titre .bloc-consigne-generale {
+	width:600px;
+	margin:10px auto 10px auto;
+	text-align:center;
+	font-size:16px;
+	line-height:1.5
+}
+
+.clc .page.titre .bloc-illustration {
+	width:735px;
+	height:350px;
+	text-align:left;
+	margin:20px 0 10px 0;
+	overflow:hidden
+}
+
+.clc .page.titre .bloc-illustration .image-sprite {
+	margin:auto;
+}
+.clc .page.titre .bloc-illustration .video-sprite {
+	display:block;
+	margin:auto;
+}
+
+.clc .image-sprite > img {
+	margin:auto;
+	max-width:100%;
+	max-height:100%;
+}
+.clc .video-sprite {
+	margin:auto;
+	max-width:100%;
+	max-height:100%;
+}
+
+.clc .page.question {
+    display:none;
+}
+
+.clc .page.question .bloc-animation{
+	position:relative;
+    height:450px;
+	width:735px;
+	-webkit-user-select: none;
+    -moz-user-select: none;  
+    -khtml-user-select: none;  
+    -ms-user-select: none;
+}
+
+.clc .page.question .bloc-score {
+	display:none;
+	position:absolute;
+    width:160px;
+    padding:10px;
+    left:10px;
+    top:410px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.clc .page.question .bloc-info {
+	display:none;
+	position:absolute;
+    width:160px;
+    left:565px;
+    top:320px;
+    min-height:16px;
+    color:#fff;
+    font-size:16px;
+	line-height:16px;
+	font-weight:bold;
+    text-align:center;
+	border:1px solid #ccc;
+	border-radius:5pt;
+	
+}
+
+.clc .page.question .bloc-info .contenu {
+	margin:10px;
+	text-shadow:0 -1px 0 hsla(214,100%,0%,.5);
+}
+
+.clc .page.question .bloc-info .toolbar {
+	margin:10px;
+}
+
+.clc .page.question .bloc-info.bravo {
+	background-color:#8cc63f;
+	background-repeat:repeat-x;
+	background-image:url(images/bloc-info-vert.png);
+	background-position:bottom;
+}
+
+.clc .page.question .bloc-info.erreur {
+	background-repeat:repeat-x;
+	background-color:#ff0000;
+	background-image:url(images/bloc-info-rouge.png);
+	background-position:bottom;
+}
+
+.clc .page.question .bloc-info.rien {
+	background-color:#308DCC;
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-image:url(images/bloc-info-bleu.png);
+}
+
+.clc .text-field{
+	border: 1px solid #ccc;
+}
+
+.clc .text-field.actif{
+	border: 3px solid #00C6FF;
+}
+	
+.clc .bloc-chrono{
+	position: absolute;
+	top: 5px;
+	left: 17.5px
+}
+
+.clc .page.resultat {
+    display:none;
+}
+
+.clc .page.resultat .bloc-titre-resultat {
+	width:100%;
+	margin-top:20px;
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+}
+
+.clc .page.resultat .table-resultat {
+	position:static;
+	margin:40px auto;
+	width:450px;
+	font-size:18px;
+	font-weight:bold;
+	background-color: #fff;
+	border:1px solid #ccc;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.clc .page.resultat .table-resultat td{
+	width:50%;
+	padding:10px;
+}
+
+.clc .page.resultat .table-resultat .label{
+	text-align:right;
+}
+
+.clc .page.parametre {
+	display:none;
+}
+
+.clc .page.resultat .table-resultat .etoile{
+	text-align: center;
+}
+.clc .page.resultat .table-resultat .etoile img{
+	width:166px;
+	background-image: url(images/fond-jaune.png);
+	background-repeat: no-repeat;
+}
+
+.clc .page.parametre .bloc-titre-parametre {
+	width:100%;
+	margin-top:20px;
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+}
+
+.clc .page.parametre .bloc-parametre {
+	width:80%;
+	margin:20px auto auto auto;
+}
+
+.clc .page.parametre .clc-opt-control {
+	/* width:100%;*/
+	margin:20px auto 20px auto;
+	line-height:20px;
+}
+
+.clc .page.parametre .clc-opt-conteneur .clc-opt-control {
+	float:left;
+	margin:10px 20px 10px 0px;
+}
+
+.clc .page.parametre .clc-opt-label {
+	display:inline-block;
+	margin-right:10px;
+	font-size:14px;
+	font-weight:bold
+}
+
+.clc .page.parametre .clc-input-container {
+	display:inline-block;
+}
+
+.clc .page.parametre .clc-checkbox-label,.clc .page.parametre .clc-radio-label {
+	display:inline-block;
+	font-size:14px;
+	margin-right:10px;
+}
+
+.clc .page.parametre .clc-opt-input {
+	border:1px solid #ccc;
+	font-size:16px;
+	padding:2px;
+	text-align:center
+}
+
+.clc .bouton {
+	position:absolute;
+	min-width:110px;
+	/*height:27px;*/
+	font-size:16px;
+	padding:5px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	/*color:#333;*/
+	background-color:#fff;
+	/*background-image:url(images/bouton.png)*/
+	cursor:pointer;
+}
+
+.clc .bouton:hover {
+	background-image:url(images/bouton-hover.png);
+}
+
+.clc .bouton:focus {
+	outline:none
+}
+
+.clc button::-moz-focus-inner {
+  border: 0;
+}
+
+
+.clc .bouton.commencer {
+	left:312px;
+	top:391px;
+}
+
+.clc .bouton.parametrer {
+	left:434px;
+	top:392px;
+	min-width: 26px;
+	width:26px;
+	height:27px;
+	background-color:#fff;
+	background-image:url(images/options.png);
+	background-repeat:no-repeat;
+	border:none;
+}
+
+.clc .bouton.valider {
+	left:515px;
+	top:391px;
+}
+
+.bouton.suite {
+	position:static;
+}
+
+.clc .bouton.recommencer, .clc .bouton.exercice-suivant {
+	left:312.5px;
+	top:370px;
+}
+
+.clc .bouton.tester-parametre {
+	left:312px;
+	top:391px;
+}
+
+.clc .snd-sprite {
+	position:absolute;
+	width:40px;
+	height:40px;
+	left:675px;
+	top:20px;
+	background-image:url(images/play.png);
+	border:1px solid #ccc;
+	border-radius:5pt;
+	cursor:pointer
+}
+
+.clc .snd-sprite.play {
+	background-image:url(images/play.png);
+}
+
+.clc .snd-sprite.pause {
+	background-image:url(images/pause.png);
+}
+
+
+
+.clc .keyboard.base-container {
+	position:relative;
+	width:712px;
+	height:148px;
+	margin:auto;
+	overflow:hidden;
+}
+
+.clc .keyboard .zone-clavier-1 {
+	position:relative;
+	float:left;
+	width:74px;
+	height:148px;
+	overflow:hidden;
+}
+
+.clc .keyboard .zone-clavier-2 {
+	position:relative;
+	float:left;
+	top:0;
+	width:370px;
+	height:148px;
+	overflow:hidden;
+}
+
+.clc .keyboard .zone-clavier-3 {
+	position:relative;
+	float:left;
+	top:0;
+	width:194px;
+	height:148px;
+}
+.clc .keyboard .zone-clavier-4 {
+	position:relative;
+	float:left;
+	top:0;
+	width:74px;
+	height:148px;
+}
+
+.clc .keyboard .key {
+	float:left;
+	width:64px;
+	height:64px;
+	margin:5px;
+	font-size:36px;
+	text-align:center;
+	line-height:64px;
+	background-repeat: no-repeat;
+}
+
+.clc .keyboard .key.disabled{
+	color:#ccc
+}
+
+.clc .keyboard .key.numeric {
+	background-image:url(images/key-small.png);
+}
+
+.clc .keyboard .key.virg {
+	background-image:url(images/key-small.png);
+	background-repeat: no-repeat;
+}
+
+.clc .keyboard .key.arrow.left {
+	background-image:url(images/key-left.png);
+}
+.clc .keyboard .key.arrow.left.disabled {
+	background-image:url(images/key-left-disabled.png);
+}
+
+.clc .keyboard .key.arrow.right {
+	background-image:url(images/key-right.png);
+}
+.clc .keyboard .key.arrow.right.disabled {
+	background-image:url(images/key-right-disabled.png);
+}
+
+.clc .keyboard .key.arrow.up {
+	background-image:url(images/key-up.png);
+}
+.clc .keyboard .key.arrow.up.disabled {
+	background-image:url(images/key-up-disabled.png);
+}
+
+.clc .keyboard .key.arrow.down {
+	background-image:url(images/key-down.png);
+}
+.clc .keyboard .key.arrow.down.disabled {
+	background-image:url(images/key-down-disabled.png);
+}
+
+.clc .keyboard .key.large {
+	width:184px;
+	background-image:url(images/key-large.png);
+	font-size:24px;
+}
+
+.clc .keyboard .key.medium {
+	width:110px;
+	background-image:url(images/key-medium.png);
+	font-size:24px;
+}
+
