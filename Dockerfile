@@ -22,6 +22,15 @@ RUN apt-get install ${APT_FLAGS} \
 COPY app ${DOCUMENTROOT}
 # --------------- FIN COUCHE PHP --------------------
 
+# --------------- INSTALL DEPOT ---------------------
+RUN apt-get install -y git
+RUN git clone https://github.com/Bono2007/dockerClc /${DOCUMENTROOT}
+# --------------- FIN INSTALL DEPOT --------------------
+
+# VOLUME POUR exercices
+VOLUME /${DOCUMENTROOT}/exercices
+
+
 # OUVERTURE DU PORT HTTP
 EXPOSE 80
 
