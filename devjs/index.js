@@ -22,6 +22,7 @@ $(document).ready(function(){
         $("#modale-exo").html(exercice);
         $("#modale-exo").dialog({
             close:function(){
+				$(document).off("keydown.clc");
                 exercice.unload();
             }
         });

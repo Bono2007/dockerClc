@@ -27,14 +27,17 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     
-    <link rel="stylesheet" type="text/css" href="lib-externes/jquery/css/start/jquery-ui-1.10.4.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib-externes/jquery/css/start/jquery-ui-1.12.1.css" />
+    
+    <link rel="stylesheet" type="text/css" href="lib-externes/katex.min.css" />
    
     <script src="lib-externes/modernizr.js" ></script>
     
-    <script src="lib-externes/jquery/js/jquery-1.10.2.js" ></script>
+<!--    <script src="lib-externes/jquery/js/jquery-1.10.2.js" ></script>
     <script src="lib-externes/jquery/js/jquery-ui-1.10.4.custom.min.js" ></script>
     <script src="lib-externes/jquery/js/jquery.ui.touch-punch.min.js" ></script>
-    <script src="lib-externes/jquery/js/jquery.transit.js" ></script>
+    <script src="lib-externes/jquery/js/jquery.transit.js" ></script>-->
+    <script src="lib-externes/jquery.all.js" ></script>
     
     <script src="lib-externes/big/big.js" ></script>
     <script src="lib-externes/big/big-french.js" ></script>
@@ -51,7 +54,9 @@
     <script src="lib-externes/createjs/easeljs.js" ></script>
     <script src="lib-externes/createjs/tweenjs.js" ></script>
     
-    
+    <script src="lib-externes/katex.min.js" ></script>
+    <script src="lib-externes/math.min.js" ></script>
+    <script src="lib-externes/auto-render.min.js" ></script>
 
     <link rel="stylesheet" type="text/css" href="clc/css/clc.css" />
     
